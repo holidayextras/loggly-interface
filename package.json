@@ -17,10 +17,10 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {},
-  "keywords": [],
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-jscs-checker": "~0.4.0"
-  }
+  },
+  "keywords": []
 }
