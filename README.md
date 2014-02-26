@@ -5,7 +5,7 @@ A Loggly module for the Tapestry logger
 ## Getting Started
 To install the module:
 ```
-$ npm install git+ssh://git@bitbucket.org/hxshortbreaks/tapestry-exodus.git
+$ npm install git+ssh://git@bitbucket.org/hxshortbreaks/tapestry-logger-loggly.git
 ```
 ## Documentation
 
