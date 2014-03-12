@@ -11,29 +11,29 @@
 
 module.exports = function( grunt ) {
 
-  // Project configuration.
-  grunt.initConfig( {
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      core: {
-        src: ['Gruntfile.js', 'package.json', 'lib/**/*.js']
-      }
-    },
+	// project configuration
+	grunt.initConfig( {
+		jshint: {
+			options: {
+				jshintrc: '.jshintrc'
+			},
+			core: {
+				src: ['Gruntfile.js', 'package.json', 'lib/**/*.js']
+			}
+		},
 		jscs: {
 			options: {
 				config: 'shortbreaks.jscs.json'
 			},
 			src: ['<%= jshint.core.src %>']
 		}
-  } );
+	} );
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	// load tasks from the specified grunt plugins...
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-jscs-checker' );
 
-  // Default task.
-  grunt.registerTask( 'default', ['jshint', 'jscs'] );
+	// register task alias'
+	grunt.registerTask( 'default', ['jshint', 'jscs'] );
 
 };

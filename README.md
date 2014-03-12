@@ -1,33 +1,40 @@
 # Tapestry Logger Loggly
 
+![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+### About
+
 A Loggly module for the Tapestry logger
 
 ## Getting Started
+
 To install the module:
 ```
 $ npm install git+ssh://git@bitbucket.org/hxshortbreaks/tapestry-logger-loggly.git
 ```
+
+#### EditorConfig
+
+EditorConfig helps us define and maintain consistent coding styles between different editors and IDEs.  If you are using Sublime Editor you can install the `EditorConfig` using [Package Control](https://sublime.wbond.net).
+
+For non Sublime development a bunch of other IDE plugins are available [here](http://editorconfig.org/#download)
+
 ## Documentation
 
-The following proceedures should also be observed.
+## Notes on coding style
 
-Every callback function should be received with the parameter name "callback":
-```javascript
-var exampleFunction = function( callback ) {}
+Code is linted by ".jshintrc" and checked against the coding style guide "shortbreaks.jscs.json" when you run the default grunt task:
 ```
-and all callbacks should return an "error" as their first parameter and a "result" as their second:
-```javascript
-exampleFunction( firstParameter, function( error, result ) {} );
+$ grunt
 ```
-## Examples
-_(Coming soon)_
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+## Tests
 
-## Release History
-_(Nothing yet)_
+Tests will run using the default grunt task but can also be called stand-alone using:
+```
+$ grunt test
+```
 
 ## License
-Copyright (c) 2014 Shortbreaks  
+Copyright (c) 2014 Shortbreaks
 Licensed under the MIT license.
