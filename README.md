@@ -10,7 +10,7 @@ A Loggly module for the Tapestry logger
 
 To install the module:
 ```
-$ npm install git+ssh://git@bitbucket.org/hxshortbreaks/tapestry-logger-loggly.git
+$ npm install git+ssh://git@bitbucket.org/hxshortbreaks/loggly-interface.git
 ```
 
 #### EditorConfig
