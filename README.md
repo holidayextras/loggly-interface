@@ -1,10 +1,10 @@
-# Tapestry Logger Loggly
+# Loggly Interface
 
-![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ### About
 
-A Loggly module for the Tapestry logger
+An module for pushing logs to Loggly
 
 ## Getting Started
 
