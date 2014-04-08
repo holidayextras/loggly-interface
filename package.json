@@ -17,12 +17,13 @@
 		"node": ">= 0.10.0"
 	},
 	"scripts": {
+		"start": "node launch.js",
 		"test": "grunt test"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"grunt": "~0.4.2",
-		"grunt-contrib-jshint": "~0.8.0",
-		"grunt-jscs-checker": "~0.4.0"
+		"grunt": "~0.4.4",
+		"grunt-contrib-jshint": "~0.10.0",
+		"grunt-jscs-checker": "~0.4.1"
 	}
 }
