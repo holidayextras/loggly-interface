@@ -8,4 +8,4 @@
 * @author Kevin Hodges <kevin.hodges@holidayextras.com>
 */
 
-module.exports = require( './lib/tapestry-logger-loggly.js' );
+module.exports = require( './lib/loggly-interface.js' );
