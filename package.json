@@ -1,7 +1,7 @@
 {
 	"name": "loggly-interface",
 	"description": "An module for pushing logs to Loggly",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"homepage": "https://bitbucket.org/hxshortbreaks/loggly-interface",
 	"author": {
 		"name": "Shortbreaks",
@@ -15,9 +15,6 @@
 	"main": "index",
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"scripts": {
-		"test": "grunt test"
 	},
 	"dependencies": {},
 	"devDependencies": {

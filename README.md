@@ -28,13 +28,6 @@ Code is linted by ".jshintrc" and checked against the coding style guide "shortb
 $ grunt
 ```
 
-## Tests
-
-Tests will run using the default grunt task but can also be called stand-alone using:
-```
-$ grunt test
-```
-
 ## License
 Copyright (c) 2014 Shortbreaks
 Licensed under the MIT license.
