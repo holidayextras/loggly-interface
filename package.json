@@ -16,13 +16,9 @@
 	"engines": {
 		"node": ">= 0.10.0"
 	},
-<<<<<<< HEAD
-=======
 	"scripts": {
-		"start": "node launch.js",
-		"test": "grunt test"
+		"start": "node launch.js"
 	},
->>>>>>> b8c64822289238591839ea238758f7605f1530e8
 	"dependencies": {},
 	"devDependencies": {
 		"grunt": "~0.4.4",
