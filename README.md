@@ -21,6 +21,18 @@ For non Sublime development a bunch of other IDE plugins are available [here](ht
 
 ## Documentation
 
+## Log style
+To try and keep consistency across our systems
+type and namespace
+query    -> payload
+reply    -> payload
+request  -> payload
+response -> payload
+log      -> system
+responseTime -> system
+system   -> error
+thirdPartySystem -> error
+
 ## Notes on coding style
 
 Code is linted by ".jshintrc" and checked against the coding style guide "shortbreaks.jscs.json" when you run the default grunt task:

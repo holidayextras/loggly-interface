@@ -18,7 +18,7 @@ module.exports = function( grunt ) {
 				jshintrc: '.jshintrc'
 			},
 			core: {
-				src: ['Gruntfile.js', 'package.json', 'lib/**/*.js']
+				src: ['*.js', 'lib/**/*.js']
 			}
 		},
 		jscs: {

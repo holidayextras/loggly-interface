@@ -1,7 +1,7 @@
 {
 	"name": "loggly-interface",
 	"description": "An module for pushing logs to Loggly",
-	"version": "0.1.2",
+	"version": "0.2.1",
 	"homepage": "https://bitbucket.org/hxshortbreaks/loggly-interface",
 	"author": {
 		"name": "Shortbreaks",
@@ -22,7 +22,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"grunt": "~0.4.4",
-		"grunt-contrib-jshint": "~0.10.0",
-		"grunt-jscs-checker": "~0.4.1"
+		"grunt-contrib-jshint": "^0.10.0",
+		"grunt-jscs": "^0.6.2"
 	}
 }
