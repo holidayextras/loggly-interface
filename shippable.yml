@@ -1,0 +1,25 @@
+# Language setting
+language: node_js
+
+# Version number
+node_js:
+  - 0.10.30
+
+# Create directories for test and coverage reports
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+  - export XUNIT_FILE=shippable/testresults/results.xml
+
+# Running the tests
+script:
+  - npm test
+
+# Only let people know when the build has changed
+# We don't want to spam failures
+notifications:
+  email:
+    recipients:
+      - sophie.george@holidayextras.com
+    on_success: always
+    on_failure: change
