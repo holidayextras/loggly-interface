@@ -4,13 +4,13 @@
 
 ### About
 
-An module for pushing logs to Loggly
+Module for pushing logs to Loggly
 
 ## Getting Started
 
 To install the module:
 ```
-$ npm install git+ssh://git@bitbucket.org/hxshortbreaks/loggly-interface.git
+$ npm install git+ssh://git@github.com:holidayextras/loggly-interface.git
 ```
 
 #### EditorConfig
@@ -24,14 +24,15 @@ For non Sublime development a bunch of other IDE plugins are available [here](ht
 ## Log style
 To try and keep consistency across our systems
 type and namespace
-query    -> payload
-reply    -> payload
-request  -> payload
-response -> payload
-log      -> system
-responseTime -> system
-system   -> error
-thirdPartySystem -> error
+
+		query    -> payload
+		reply    -> payload
+		request  -> payload
+		response -> payload
+		log      -> system
+		responseTime -> system
+		system   -> error
+		thirdPartySystem -> error
 
 ## Notes on coding style
 
@@ -41,5 +42,5 @@ $ grunt
 ```
 
 ## License
-Copyright (c) 2014 Shortbreaks
+Copyright © 2015 Shortbreaks
 Licensed under the MIT license.
