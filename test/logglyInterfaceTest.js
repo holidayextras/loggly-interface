@@ -29,13 +29,13 @@ describe( 'logglyInterface', function() {
 			done();
 		} );
 
-		it( 'should fire an https request when the correct arguments are passed in', function( done ) {
+		it( 'should make an https request when the correct arguments are passed in', function( done ) {
 			logglyInterface.log( loadTestResource( './fixtures/logOptions' ), loadTestResource( './fixtures/logLog' ) );
 			httpsStub.calledWith( loadTestResource( './expected/logResult' ) ).should.be.true;
 			done();
 		} );
 
-		it( 'should fire an http request when log is a string', function( done ) {
+		it( 'should make an http request when log is a string', function( done ) {
 			logglyInterface.log(  loadTestResource( './fixtures/logOptions' ), 'test' );
 			httpsStub.calledWith( loadTestResource( './expected/logResult' ) ).should.be.true;
 			done();
