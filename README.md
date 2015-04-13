@@ -34,5 +34,5 @@ type and namespace
 Code is linted checked against the style guide with [make-up](https://github.com/holidayextras/make-up), running npm test will run all tests required.
 
 ## License
-Copyright (c) 2015 Shortbreaks
+Copyright © 2015 Shortbreaks
 Licensed under the MIT license.
