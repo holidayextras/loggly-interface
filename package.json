@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "node launch.js",
-    "test": "istanbul cover _mocha -- --recursive test/ -R spec"
+    "test": "grunt jshint && grunt jscs && istanbul cover _mocha -- --recursive test/ -R spec"
   },
   "dependencies": {},
   "devDependencies": {
