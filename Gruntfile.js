@@ -1,13 +1,7 @@
 /* jslint node: true */
 'use strict';
 
-/*
-* @name /Gruntfile.js
-* @description Le Gruntfile...
-*              keep this tidy, alphabeticised etc
-* @since Wed Feb 26 2014
-* @author Kevin Hodges <kevin.hodges@holidayextras.com>
-*/
+var makeup = require( 'make-up' );
 
 module.exports = function( grunt ) {
 
@@ -15,15 +9,16 @@ module.exports = function( grunt ) {
 	grunt.initConfig( {
 		jshint: {
 			options: {
-				jshintrc: '.jshintrc'
+				jshintrc: makeup( 'jshintrc.json' )
 			},
 			core: {
-				src: ['*.js', 'lib/**/*.js']
+				src: ['*.js']
 			}
 		},
 		jscs: {
 			options: {
-				config: 'shortbreaks.jscs.json'
+				config: makeup( 'jscsrc.json' ),
+				force: 'true'
 			},
 			src: ['<%= jshint.core.src %>']
 		}
@@ -32,8 +27,5 @@ module.exports = function( grunt ) {
 	// load tasks from the specified grunt plugins...
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-jscs' );
-
-	// register task alias'
-	grunt.registerTask( 'default', ['jshint', 'jscs'] );
 
 };
