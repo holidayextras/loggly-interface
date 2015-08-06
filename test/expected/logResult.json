@@ -1,6 +1,5 @@
 {
-	"hostname": "test",
-	"port": 443,
-	"path": "/test/test/tag/test,test,test",
-	"method": "POST"
+	"baseUrl": "https://test",
+	"uri": "/test/test/tag/test,test,test",
+	"body": "{\"test\":\"test\",\"namespace\":\"test\"}"
 }
