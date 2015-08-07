@@ -1,5 +1,5 @@
 {
-	"baseUrl": "https://test",
-	"uri": "/test/test/tag/test,test,test",
+	"baseUrl": "https://host",
+	"uri": "/path/key/tag/service,type,namespace",
 	"body": "test"
 }

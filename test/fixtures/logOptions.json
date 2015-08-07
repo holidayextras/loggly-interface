@@ -1,5 +1,5 @@
 {
-	"service": "test",
-	"type": "test",
-	"namespace": "test"
+	"service": "service",
+	"type": "type",
+	"namespace": "namespace"
 }
