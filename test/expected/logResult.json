@@ -1,6 +1,0 @@
-{
-	"hostname": "test",
-	"port": 443,
-	"path": "/test/test/tag/test,test,test",
-	"method": "POST"
-}

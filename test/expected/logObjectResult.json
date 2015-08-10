@@ -1,0 +1,5 @@
+{
+	"baseUrl": "https://host",
+	"uri": "/path/key/tag/service,type,namespace",
+	"body": "{\"test\":\"test\",\"namespace\":\"namespace\"}"
+}
