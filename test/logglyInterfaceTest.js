@@ -22,7 +22,7 @@ describe( 'logglyInterface', function() {
 		done();
 	} );
 
-	describe( '#log', function() {
+	context( '#log', function() {
 
 		it( 'should make an https request when the correct arguments are passed in', function( done ) {
 			logglyInterface.log( loadTestResource( './fixtures/logOptions' ), loadTestResource( './fixtures/logLog' ) );
