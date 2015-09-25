@@ -38,7 +38,7 @@ describe( 'logglyInterface', function() {
 
 		it( 'should not make a https request when no log argument is passed', function( done ) {
 			logglyInterface.log();
-			requestPostStub.callCount.should.equal( 1 );
+			requestPostStub.callCount.should.equal( 0 );
 			done();
 		} );
 
