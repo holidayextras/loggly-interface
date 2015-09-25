@@ -1,0 +1,24 @@
+machine:
+  node:
+    version: 0.10.38
+dependencies:
+  pre:
+    - chmod +x checkRelease.sh
+    - ./checkRelease.sh
+    - npm install istanbul grunt grunt-cli -g
+test:
+  pre:
+    - mkdir -p $CIRCLE_TEST_REPORTS/unit
+    - mkdir -p $CIRCLE_TEST_REPORTS/coverage
+  override:
+    - grunt jshint
+    - grunt jscs
+    - istanbul cover _mocha --  --timeout 15000 --recursive test/**/*Test.js -R xunit > $CIRCLE_TEST_REPORTS/unit/results.xml
+  post:
+    - cp -r ./coverage/ $CIRCLE_ARTIFACTS/coverage
+
+experimental:
+  notify:
+    branches:
+      only:
+        - master
