@@ -1,6 +1,6 @@
 # Loggly Interface
 
-[![Build Status](https://api.shippable.com/projects/55269c515ab6cc1352bde8f9/badge?branchName=master)](https://app.shippable.com/projects/55269c515ab6cc1352bde8f9/builds/latest)
+[![Circle CI](https://circleci.com/gh/holidayextras/loggly-interface/tree/master.svg?style=svg)](https://circleci.com/gh/holidayextras/loggly-interface/tree/master)
 
 ### About
 
