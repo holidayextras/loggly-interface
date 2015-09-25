@@ -1,8 +1,11 @@
 #!/bin/bash -e
 
 REPO_OWNER="holidayextras"
+
+echo "Chesking https://api.github.com/repos/${REPO_OWNER}/${CIRCLE_PROJECT_REPONAME}/releases/latest"
+
 APP_VERSION="`cat package.json | jq '.version' | tr -d '"' `"
-RELEASE=`curl --user "${GHUSER}:${GHPASS}" https://api.github.com/repos/${REPO_OWNER}/}/${CIRCLE_PROJECT_REPONAME}/releases/latest | jq '.tag_name' | tr -d '"' | tr -d 'v'`
+RELEASE=`curl --user "${GHUSER}:${GHPASS}" https://api.github.com/repos/${REPO_OWNER}/${CIRCLE_PROJECT_REPONAME}/releases/latest | jq '.tag_name' | tr -d '"' | tr -d 'v'`
 
 echo "Current Release: $RELEASE"
 echo "Local Version: $APP_VERSION"
