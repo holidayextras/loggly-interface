@@ -1,6 +1,6 @@
 # Loggly Interface
 
-[![Circle CI](https://circleci.com/gh/holidayextras/loggly-interface.svg?style=svg&circle-token=dfd8027a148c51e3c7bf211da0c3b8795a653774)](https://circleci.com/gh/holidayextras/loggly-interface)
+[![Circle CI](https://circleci.com/gh/holidayextras/loggly-interface/tree/master.svg?style=svg&circle-token=dfd8027a148c51e3c7bf211da0c3b8795a653774)](https://circleci.com/gh/holidayextras/loggly-interface)
 
 ### About
 
