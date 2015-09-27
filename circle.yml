@@ -6,7 +6,7 @@ dependencies:
     - chmod +x checkRelease.sh
     - chmod +x markRelease.sh
     - ./checkRelease.sh
-    - npm install istanbul grunt grunt-cli -g
+    - npm install grunt grunt-cli istanbul mocha -g
 test:
   pre:
     - mkdir -p $CIRCLE_TEST_REPORTS/unit
