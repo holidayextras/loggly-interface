@@ -3,7 +3,7 @@
 
 var chai = require( 'chai' );
 var _ = require( 'lodash' );
-chai.should();
+var expect = chai.expect;
 var sinon = require( 'sinon' );
 var request = require( 'request' );
 var requestPostStub;
@@ -27,19 +27,19 @@ describe( 'logglyInterface', function() {
 
     it( 'should make an https request when the correct arguments are passed in', function( done ) {
       logglyInterface.log( loadTestResource( './fixtures/logOptions' ), loadTestResource( './fixtures/logLog' ) );
-      requestPostStub.calledWith( loadTestResource( './expected/logObjectResult' ) ).should.be.true;
+      expect( requestPostStub.calledWith( loadTestResource( './expected/logObjectResult' ) ) ).to.be.true;
       done();
     } );
 
     it( 'should make an https request when log is a string', function( done ) {
       logglyInterface.log( loadTestResource( './fixtures/logOptions' ), 'test' );
-      requestPostStub.calledWith( loadTestResource( './expected/logStringResult' ) ).should.be.true;
+      expect( requestPostStub.calledWith( loadTestResource( './expected/logStringResult' ) ) ).to.be.true;
       done();
     } );
 
     it( 'should not make a https request when no log argument is passed', function( done ) {
       logglyInterface.log();
-      requestPostStub.callCount.should.equal( 0 );
+      expect( requestPostStub.callCount ).to.equal( 0 );
       done();
     } );
 
