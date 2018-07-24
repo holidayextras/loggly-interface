@@ -1,35 +1,39 @@
 {
-	"name": "loggly-interface",
-	"description": "An module for pushing logs to Loggly",
-	"version": "0.5.1",
-	"homepage": "https://github.com/holidayextras/loggly-interface",
-	"author": {
-		"name": "Shortbreaks",
-		"email": "shortbreaksdev@holidayextras.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:holidayextras/loggly-interface.git"
-	},
-	"license": "MIT",
-	"main": "index",
-	"engines": {
-		"node": ">= 0.10.0"
-	},
-	"scripts": {
-		"start": "node launch.js",
-		"test": "node_modules/deployment-helpers/nodeApps/preRelease.sh && node_modules/.bin/make-up lib test && istanbul cover _mocha -- --recursive test/ -R spec"
-	},
-	"dependencies": {
-		"request": "2.60.0"
-	},
-	"devDependencies": {
-		"chai": "2.2.0",
-		"deployment-helpers": "git+ssh://git@github.com:holidayextras/deployment-helpers.git",
-		"istanbul": "0.3.13",
-		"lodash": "3.6.0",
-		"make-up": "6.0.0",
-		"mocha": "2.2.4",
-		"sinon": "1.14.1"
-	}
+  "name": "loggly-interface",
+  "description": "An module for pushing logs to Loggly",
+  "version": "0.5.1",
+  "homepage": "https://github.com/holidayextras/loggly-interface",
+  "author": {
+    "name": "Shortbreaks",
+    "email": "shortbreaksdev@holidayextras.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:holidayextras/loggly-interface.git"
+  },
+  "license": "MIT",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "start": "node launch.js",
+    "test": "node_modules/deployment-helpers/nodeApps/preRelease.sh && node_modules/.bin/make-up lib test && istanbul cover _mocha -- --recursive test/ -R spec",
+    "deploy": "exit 0"
+  },
+  "dependencies": {
+    "request": "2.60.0"
+  },
+  "devDependencies": {
+    "chai": "2.2.0",
+    "deployment-helpers": "git+ssh://git@github.com:holidayextras/deployment-helpers.git",
+    "istanbul": "0.3.13",
+    "lodash": "3.6.0",
+    "make-up": "6.0.0",
+    "mocha": "2.2.4",
+    "sinon": "1.14.1"
+  },
+  "owner": "sb-backoffice",
+  "platform": "custom",
+  "ci": "dockyard"
 }
