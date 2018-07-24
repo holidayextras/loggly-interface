@@ -1,7 +1,7 @@
 {
   "name": "loggly-interface",
   "description": "An module for pushing logs to Loggly",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "homepage": "https://github.com/holidayextras/loggly-interface",
   "author": {
     "name": "Shortbreaks",
@@ -17,6 +17,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
+    "ci": "echo 'nothing to do here'",
     "start": "node launch.js",
     "test": "node_modules/deployment-helpers/nodeApps/preRelease.sh && node_modules/.bin/make-up lib test && istanbul cover _mocha -- --recursive test/ -R spec",
     "deploy": "exit 0"
