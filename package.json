@@ -1,7 +1,7 @@
 {
   "name": "loggly-interface",
   "description": "An module for pushing logs to Loggly",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "homepage": "https://github.com/holidayextras/loggly-interface",
   "author": {
     "name": "Shortbreaks",
