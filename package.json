@@ -34,7 +34,7 @@
     "mocha": "2.2.4",
     "sinon": "1.14.1"
   },
-  "owner": "sb-backoffice",
+  "owner": "sb-tooling",
   "platform": "custom",
   "ci": "dockyard"
 }
